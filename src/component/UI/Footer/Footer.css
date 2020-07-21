@@ -1,0 +1,8 @@
+.Footer{
+  }
+@media(max-width:599px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

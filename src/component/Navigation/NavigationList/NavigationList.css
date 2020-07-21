@@ -1,0 +1,14 @@
+.root {
+    width: 500 !important;
+    background-color: black !important;
+    display: flex;
+    flex-direction: row;
+  }
+  @media(max-width:599px) {
+      .root {
+          flex-direction: column
+      }
+  }
+  .root .Mui-selected{
+        color: "bisque" !important;
+  }

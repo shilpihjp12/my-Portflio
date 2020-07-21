@@ -1,0 +1,42 @@
+.SideDrawer{
+    background-color: #173447;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+}
+.root {
+    display: flex;
+    z-index: 4000;
+    flex-direction: column;
+    transition: transform 0.3s ease-out;
+  }
+  .drawer {
+    width: 240
+  }
+  .drawerPaper {
+    width: 240;
+    background-color: #173447 !important;
+  }
+  .drawerContainer {
+    overflow: 'auto';
+  }
+  .Logo {
+    height: 11%;
+    padding-top: -2px;
+    padding-left: 16px;
+}
+.Footer{
+  padding-top: 255px;
+}
+
+@media(min-width:600px) {
+    .root{
+        display: none;
+    }
+}
+
+.Close {
+    transform: translateX(-100%);
+}

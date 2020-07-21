@@ -1,0 +1,25 @@
+.container {
+    margin-top: 100px;
+}
+.header{
+    top: 15px;
+}
+.Bottom {
+    bottom: 0;
+}
+
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F3F0E2;
+    color: #2D5D7C;
+    text-align: center;
+}
+
+@media(max-width:599px) {
+    .Footer {
+        display: none;
+    }
+}

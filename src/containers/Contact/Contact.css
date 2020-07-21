@@ -1,0 +1,39 @@
+.Contact{
+    width: 50%
+}
+
+
+@media(max-width:1033px) {
+    .Contact{
+        width: 100%
+    }
+}
+
+form {
+    margin: '2vw';
+    width: '100%';
+}
+
+.Decor {
+    color:#914343;;
+    font-size: 15px;
+    font-family: 'La Belle Aurore';
+    font-style: italic;
+}
+.BodyDecor{
+    margin-left: 2vw;
+    font-family: 'La Belle Aurore';
+    font-size: 24px;
+}
+.NameTextDecor{
+    color: #71368D;
+    text-shadow: #6B2828;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.FooterDecor{
+    margin-left: 2vw;
+    font-family: 'La Belle Aurore';
+    font-size: 15px;
+}

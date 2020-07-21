@@ -1,0 +1,3 @@
+export const TRANS_START = 'TRANS_START';
+export const TRANS_SUCCESS = 'TRANS_SUCCESS';
+export const TRANS_FAILED = 'TRANS_FAILED';
