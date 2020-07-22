@@ -1,4 +1,4 @@
-## my-portfolio
+## My Portfolio
 React app created using redux, redux-thunk and material-ui.
 
 access the app :- https://my-portfolio-72551.firebaseapp.com/
@@ -29,6 +29,6 @@ access the app :- https://my-portfolio-72551.firebaseapp.com/
 
     `http://localhost:5000/`
 
-## Authors
+## Author
 
 * **Shilpi Priya** - *Initial work* - (https://github.com/shilpihjp12)
