@@ -145,6 +145,12 @@ class Contact extends Component {
             form = <Spinner />
         }
 
+        if(this.props.contacted) {
+            form = <div style={{marginTop:'50px', fontSize:'25px'}}>
+                Thanks for reaching out to me. 
+            </div>
+        }
+
         const h1 = '<h2>';
         const h1close = '</h2>';
         return(
@@ -160,8 +166,10 @@ class Contact extends Component {
                 If you have other request or question, don’t hesitate to contact me using below form.</p>
                
                <div style={{marginLeft:'24px'}}>
+                   {this.props.error? <span style={{color:'red', marginBottom:'5px'}}>Please try after sometime.</span> : null}
                    {form}
                </div>
+               
             </div>
         )
     }
@@ -170,7 +178,9 @@ class Contact extends Component {
 const mapStateToProps = state => {
     return {
         loading : state.conRed.loading,
-        name:  state.conRed.name
+        name:  state.conRed.name,
+        contacted: state.conRed.contacted,
+        error: state.conRed.error
     }
 }
 

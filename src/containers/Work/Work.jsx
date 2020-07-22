@@ -11,6 +11,7 @@ class Work extends Component {
             heading: 'MediaItem Angular',
             Description: 'A Media Item App is created to add Media details with their Media Type to learn Angular',
             gitUrl: 'https://github.com/shilpihjp12/Media_Angular',
+            appUrl: null,
             imgUrl: ''
         },
         {
@@ -18,14 +19,15 @@ class Work extends Component {
             heading: 'MediaItem Springboot',
             Description: 'A Media Item App is created to add Media details with their Media Type to learn Springboot',
             gitUrl: 'https://github.com/shilpihjp12/Media_Springboot',
+            appUrl: null,
             imgUrl: ''
         },
         {
             projectId: 3,
             heading: 'My PortFolio',
             Description: 'This App has created for My portfolio. Developed in React with Redux using firbase DB to get data',
-            gitUrl: null,
-            appUrl: null,
+            gitUrl: 'https://github.com/shilpihjp12/my-Portflio',
+            appUrl: 'https://my-portfolio-72551.firebaseapp.com',
             imgUrl: ''
         }]
     };

@@ -76,7 +76,7 @@ const WorkDetails = props => {
                             <div className={classes.leftData}>
                                 <p><b>Description: </b>{data.Description}</p>
                                 {data.gitUrl? <p><b>git Url: </b><a className={classes.anchor} href={data.gitUrl}>{data.gitUrl}</a></p> : null}
-                                {data.appUrl? <p><b>App Url: </b><a className={classes.anchor} href={data.appUrl}/>{data.appUrl}</p> : null}
+                                {data.appUrl? <p><b>App Url: </b><a className={classes.anchor} href={data.appUrl}>{data.appUrl}</a></p> : null}
                             </div>
                             <div className={classes.rightData}>
                                 <img className={classes.image} src={imagArr[index]}></img>

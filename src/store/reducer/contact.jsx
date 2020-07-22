@@ -1,7 +1,8 @@
 const initialState = {
     name: null,
     loading: false,
-    error: null
+    error: null,
+    contacted: false
 }
 
 const reducer = (state=initialState, action) => {
@@ -9,13 +10,16 @@ const reducer = (state=initialState, action) => {
         case('TRANS_START'):
             return {
                 ...state,
-                loading: true
+                loading: true,
+                error: null
             };
         case('TRANS_SUCCESS'):
             return {
                 ...state,
                 name: action.name,
-                loading: false
+                loading: false,
+                contacted: true,
+                error: null
             };
         case('TRANS_FAILED'):
             return {
