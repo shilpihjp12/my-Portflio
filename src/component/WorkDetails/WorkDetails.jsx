@@ -27,7 +27,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row'
   },
   leftData : {
-    width: '60%'
+    width: '60%',
+    '@media (max-width: 435px)' : {
+      width: '80%',
+    },
+    '@media (max-width: 380px)' : {
+      width: '60%',
+    }
   },
   anchor: {
     fontSize: '15px',
@@ -37,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   rightData : {
     width: '40%',
     marginLeft: '3vw',
-    '@media (max-width:  410px)' : {
+    '@media (max-width:  435px)' : {
         display:'none'
       }       
   },
