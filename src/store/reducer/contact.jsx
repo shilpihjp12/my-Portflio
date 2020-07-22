@@ -1,5 +1,5 @@
 const initialState = {
-    contact: {},
+    name: null,
     loading: false,
     error: null
 }
@@ -7,11 +7,22 @@ const initialState = {
 const reducer = (state=initialState, action) => {
     switch(action.type) {
         case('TRANS_START'):
-            return state;
+            return {
+                ...state,
+                loading: true
+            };
         case('TRANS_SUCCESS'):
-            return state;
+            return {
+                ...state,
+                name: action.name,
+                loading: false
+            };
         case('TRANS_FAILED'):
-            return state;
+            return {
+                ...state,
+                error: action.error,
+                loading: false
+            };
         default:
             return state;
     }

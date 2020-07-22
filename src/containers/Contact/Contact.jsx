@@ -4,6 +4,10 @@ import Button from '@material-ui/core/Button';
 
 import classes from './Contact.css';
 import TextArea from '../../component/UI/TextArea/TextArea';
+import Spinner from '../../component/UI/Spinner/Spinner';
+
+import {connect} from 'react-redux';
+import * as transaction from '../../store/action/contact';
 
 
 class Contact extends Component {
@@ -52,6 +56,11 @@ class Contact extends Component {
         formIsValid: true
     }
 
+    constructor(props) {
+        super(props);
+        this.saveDataToFirebase = this.saveDataToFirebase.bind(this);
+     } 
+
     inputChangedHandler = (event, inputIdentifier) => {
         const updatedOrderForm = {
             ...this.state.controls
@@ -89,8 +98,14 @@ class Contact extends Component {
         return isValid;
     }
 
-    sendMailToMe = () => {
-
+    saveDataToFirebase = (event) => {
+        event.preventDefault();
+        const contactData = {};
+        for (let formElementIdentifier in this.state.controls) {
+            contactData[formElementIdentifier] = this.state.controls[formElementIdentifier].value;
+        }
+        console.log(contactData);
+        this.props.onContactMe(contactData);
     }    
 
     
@@ -103,7 +118,7 @@ class Contact extends Component {
             });
         }
         let form = (
-            <form onSubmit={this.sendMailToMe}>
+            <form onSubmit={this.saveDataToFirebase}>
                 {formElementsArray.map(formElement => (
                     <TextArea 
                         key={formElement.id}
@@ -118,12 +133,18 @@ class Contact extends Component {
                 ))}
                 <Button
                     variant="contained"
-                    color="primary"
+                    className={classes.Button}
+                    type="submit"
                     disabled={!this.state.formIsValid}>
                     Send
                 </Button>
             </form>
         );
+
+        if(this.props.loading === true) {
+            form = <Spinner />
+        }
+
         const h1 = '<h2>';
         const h1close = '</h2>';
         return(
@@ -146,4 +167,17 @@ class Contact extends Component {
     }
 }
 
-export default Contact
+const mapStateToProps = state => {
+    return {
+        loading : state.conRed.loading,
+        name:  state.conRed.name
+    }
+}
+
+const dispatchPropsToState = dispatch => {
+    return {
+        onContactMe: (contactData) => dispatch(transaction.contactMe(contactData))
+    }
+}
+
+export default connect(mapStateToProps,dispatchPropsToState)(Contact)
