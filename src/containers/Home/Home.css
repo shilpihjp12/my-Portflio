@@ -16,6 +16,10 @@
     font-size: 35px;
 }
 
+.Button{
+    color: white !important;
+    background: linear-gradient(0deg, #286992 0%, #41536f 100%, #071233 100%);
+}
 
 
 @media(max-width:480px) {

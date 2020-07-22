@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import classes from './Home.css'
+import { Button } from '@material-ui/core';
 
 class Home extends Component {
     
@@ -19,6 +20,12 @@ class Home extends Component {
                 <p className={classes.Decor}>{h1close}</p>
                 
                 <p className={classes.FooterDecor}>Front End Developer / BackEnd Developer /  Full-stack Developer</p>
+
+                <div>
+                    <Button
+                    variant="contained"
+                    className={classes.Button}>Contact Me</Button>
+                </div>
             </div>
         )
     }
