@@ -23,3 +23,7 @@
 6. Navigate to http://localhost:5000. The app will automatically reload if you change any of the source files.
 
     `http://localhost:5000/`
+
+## Authors
+
+* **Shilpi Priya** - *Initial work* - (https://github.com/shilpihjp12)
