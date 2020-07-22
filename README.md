@@ -1,3 +1,8 @@
+## my-portfolio
+React app created using redux, redux-thunk and material-ui.
+
+access the app :- https://my-portfolio-72551.firebaseapp.com/
+
 ## Instructions
 
 1. Make sure you have these installed
