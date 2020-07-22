@@ -1,3 +1,15 @@
+
+.Parent{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Pyramid {
+    margin-left: 15vw;
+    margin-top: -58px;
+}
+
 .Skills{
     width: 50%;
 }
@@ -5,6 +17,9 @@
 @media(max-width:1033px) {
     .Skills{
         width: 100%
+    }
+    .Pyramid {
+        display: none;
     }
     
 }

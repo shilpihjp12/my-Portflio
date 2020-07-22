@@ -17,7 +17,7 @@ const SideDrawer = props => {
     return (
         <div className={classes.SideDrawer}>
             <Backdrop show={props.open} clicked={props.closed}></Backdrop>
-            <div className={attachedClasses.join(' ')}> 
+            <div className={attachedClasses.join(' ')} clicked={props.closed}> 
                 <Drawer
                     className={classes.drawer}
                     variant="permanent"

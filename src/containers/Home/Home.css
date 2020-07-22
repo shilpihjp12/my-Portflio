@@ -1,13 +1,46 @@
+
+.Parent{
+    display: flex;
+    flex-direction: row;
+}
+
+.Home{
+    width: 50%;
+}
+
+.Pyramid {
+    margin-left: 15vw;
+    margin-top: -58px;
+}
+
+@media(max-width:1033px) {
+    .Home{
+        width: 100%
+    }
+    .Pyramid {
+        display: none;
+    }
+    
+}
+
 .Decor {
     color:#914343;;
     font-size: 15px;
     font-family: 'La Belle Aurore';
     font-style: italic;
 }
+
+.Pyramid {
+    margin-left: 15vw;
+    margin-top: -58px;
+}
+
 .BodyDecor{
     margin-left: 2vw;
     font-family: 'La Belle Aurore';
     font-size: 35px;
+    transition: transform 0.3s ease-out;
+    transform: translateX(0);
 }
 .NameTextDecor{
     color: #71368D;

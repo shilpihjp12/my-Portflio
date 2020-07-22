@@ -1,5 +1,25 @@
+.Parent{
+    display: flex;
+    flex-direction: row;
+}
+
 .About{
     width: 50%;
+}
+
+.Pyramid {
+    margin-left: 15vw;
+    margin-top: -58px;
+}
+
+@media(max-width:1033px) {
+    .About{
+        width: 100%
+    }
+    .Pyramid {
+        display: none;
+    }
+    
 }
 
 @media(max-width:1033px) {
