@@ -4,6 +4,10 @@ import classes from './Home.css'
 import { Button } from '@material-ui/core';
 
 class Home extends Component {
+
+    onClickHandle = () => {
+        this.props.history.push('/contact')
+    }
     
     render() {
         const h1 = '<h1>';
@@ -24,7 +28,8 @@ class Home extends Component {
                 <div>
                     <Button
                     variant="contained"
-                    className={classes.Button}>Contact Me</Button>
+                    className={classes.Button}
+                    onClick={this.onClickHandle}>Contact Me</Button>
                 </div>
             </div>
         )
