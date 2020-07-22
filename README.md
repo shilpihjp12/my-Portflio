@@ -1,23 +1,25 @@
-Make sure you have these installed
-node.js
-git
+## Instructions
 
-Clone this repository into your local machine using the terminal (mac) or Gitbash (PC)
+1. Make sure you have these installed
+  - [node.js](http://nodejs.org/)
+  - [git](http://git-scm.com/)
 
-git clone https://github.com/shilpihjp12/my-Portflio.git
+2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) 
 
-CD to the folder
+    `git clone https://github.com/shilpihjp12/my-Portflio.git`
+    
+3. CD to the folder
 
-cd my-Portflio
+    `cd my-Portflio`
+    
+4. Run the following to install the project dependencies:
 
-Run the following to install the project dependencies:
+    `npm install`
+    
+5. Run the ng serve command to build the code, watch for file changes, and serve up the site locally:
 
-npm install
+    `npm start`
 
-Run the ng serve command to build the code, watch for file changes, and serve up the site locally:
+6. Navigate to http://localhost:5000. The app will automatically reload if you change any of the source files.
 
-ng serve
-
-Navigate to http://localhost:3000. The app will automatically reload if you change any of the source files.
-
-http://localhost:3000/
+    `http://localhost:5000/`
